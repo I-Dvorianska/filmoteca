@@ -1,0 +1,51 @@
+.btnUp {
+  position: fixed;
+
+  z-index: 1;
+  background-image: url('https://image.flaticon.com/icons/png/512/753/753227.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  &:hover {
+    opacity: 1;
+    border: none;
+    // box-shadow: 0px 8px 43px rgba(255, 106, 0, 0.7);
+    // border-radius: 38%;
+  }
+  &:focus {
+    outline: none;
+  }
+  @media screen and (max-width: 767px) {
+    background-size: 45px;
+
+    width: 45px;
+    height: 45px;
+
+    bottom: 20px;
+    right: 58px;
+  }
+  @media screen and(min-width:768px) and (max-width: 1023px) {
+    background-size: 60px;
+
+    width: 60px;
+    height: 60px;
+
+    bottom: 20px;
+    right: 7px;
+  }
+  @media screen and(min-width:1024px) {
+    background-size: 70px;
+
+    width: 70px;
+    height: 70px;
+
+    bottom: 110px;
+    right: 25px;
+  }
+}

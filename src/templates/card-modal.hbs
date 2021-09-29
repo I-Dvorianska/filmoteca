@@ -1,0 +1,45 @@
+        <div class="card-poster">
+            <picture>
+                <img class='card-poster__img' src='https://image.tmdb.org/t/p/w500{{poster_path}}' alt='{{title}}' width='100%'
+                    data-id='{{id}}'
+                    onerror="this.onerror=null;this.src='https://ik.imagekit.io/tc8jxffbcvf/default-movie-portrait_EmJUj9Tda5wa.jpg?tr=fo-auto,di-';" />
+            </picture>
+        </div>
+        <div class="card-records">
+            <h1 class="card-records__title">{{title}}</h1>
+            <table class="card-records__info">
+                <tr>
+                    <td class="card-records__item" {{!-- width='108' height='26' vertical-align="top" --}}>Vote / Votes</td>
+                    <td class="card-records__subitem">
+                        <span class="card-records__vote">{{vote_average}}</span> /
+                        <span class="card-records__votes">{{vote_count}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="card-records__item" {{!-- width='108' height='26' vertical-align="top" --}}>Popularity</td>
+                    <td class="card-records__subitem">{{popularity}}</td>
+                </tr>
+                <tr>
+                    <td class="card-records__item" {{!-- width='108' height='26' --}}>Original Title</td>
+                    <td class="card-records__subitem uppercase">{{original_title}}</td>
+                </tr>
+                <tr>
+                    <td class="card-records__item" {{!-- width='108' height='26' vertical-align="top" --}}>Genre</td>
+                    <td class="card-records__subitem">{{#each genres}} {{name}}{{#unless @last}},{{/unless}} {{/each}}</td>
+                </tr>
+            </table>
+    
+            <div>
+                <h2 class="card-records__about">About</h2>
+                <p class="card-records_description">{{overview}}</p>
+            </div>
+
+            <div class="card-buttons">
+                <button type="button" class="watched-library-button" data-id={{id}}>add to
+                    Watched</button>
+                <button type="button" class="queue-library-button" data-id={{id}}>add to
+                    queue</button>
+                </div>
+            </div>
+    
+        </div>
