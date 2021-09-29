@@ -1,12 +1,12 @@
 {
-  "name": "parcel-project-template",
+  "name": "filmoteka",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Nabiros.github.io/project-Filmoteka",
+  "homepage": "https://I-Dvorianska.github.io/filmoteka",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-Filmoteka/"
+    "build": "parcel build src/*.html --public-url /filmoteka/"
   },
   "repository": {
     "type": "git",
